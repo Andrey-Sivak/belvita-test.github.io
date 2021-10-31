@@ -1044,7 +1044,7 @@ body {
 .first-section {
   position: relative;
   padding-bottom: 360px;
-  z-index: 4;
+  z-index: 2;
 }
 
 .first-section:after {
@@ -4381,6 +4381,7 @@ b {
 
   .first-section {
     padding-bottom: 78px;
+    z-index: 4;
   }
 
   .first-section:after {
