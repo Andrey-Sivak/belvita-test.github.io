@@ -515,6 +515,13 @@ body {
   min-height: auto;
 }
 
+.stock-mob-seeds {
+  display: none;
+  position: absolute;
+  top: -169px;
+  left: 0;
+}
+
 .test .first-section {
   padding-bottom: 150px;
 }
@@ -1940,13 +1947,13 @@ span.error {
 }
 
 .intro__bg--1 {
-  top: 64px;
+  top: 88px;
   left: 0;
   z-index: 12;
 }
 
 .intro__bg--2 {
-  top: 20px;
+  top: 10px;
   right: 0;
   z-index: 12;
 }
@@ -4382,6 +4389,10 @@ b {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+  }
+
+  .stock-mob-seeds {
+    display: block;
   }
 
   .test .pass__text {
