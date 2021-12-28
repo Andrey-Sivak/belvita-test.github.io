@@ -30,8 +30,8 @@
 
 @font-face {
   font-family: 'GothamPro';
-  src: url("../fonts/GothamPro-BlackItalic.eot");
-  src: url("../fonts/GothamPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-BlackItalic.woff") format("woff"), url("../fonts/GothamPro-BlackItalic.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Black.eot");
+  src: url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -3419,6 +3419,7 @@ b {
 }
 
 .video__caption_text {
+  margin-bottom: 20px;
   text-shadow: 0px 4px 20px #FFFFFF;
   font-weight: bold;
   font-size: 50px;
@@ -4288,6 +4289,17 @@ b {
 }
 
 @media (max-width: 767px) {
+  body.test-page {
+    background-image: url("../../images/test-first-sec-bg.png");
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  body.test-page .first-section .container {
+    background-image: unset;
+  }
+
   .logo {
     position: static;
   }
@@ -4372,8 +4384,15 @@ b {
             transform: translateY(-50%);
   }
 
+  .test .pass__text {
+    line-height: 22px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .test .pass__content__wrapper {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .test_product {
@@ -4541,7 +4560,7 @@ b {
     background-position: center 45px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 78px;
+    padding-bottom: 44px;
   }
 
   .footer__bg {
@@ -4550,6 +4569,7 @@ b {
 
   .footer__bg img {
     display: block;
+    width: 100%;
   }
 
   .video__video {
@@ -4881,6 +4901,10 @@ b {
     width: 29px;
     height: 6px;
     background: #155b11;
+  }
+
+  .intro__test__product {
+    margin-bottom: -25px;
   }
 
   .intro__info {
@@ -5300,6 +5324,7 @@ b {
     font-size: 30px;
     line-height: 34px;
     margin-right: 0;
+    margin-bottom: 0;
     text-align: center;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -5495,6 +5520,7 @@ b{background:url(../../images/dist/icons/select__arrow.svg) center no-repeat}
  @media (max-width: 767px){
 
 @supports (-webkit-appearance:none){
+body.test-page{background-image:url("../../images/test-first-sec-bg.webp")}
 .cabinet__title__bg{background-image:url("../../images/dist/cabinet/title__bg--mobile.webp") !important}
 .cookies .cabinet__title__bg{background:url("../../images/dist/cookies__title__bg--mobile.webp") no-repeat center}
 .first-section .container{background-image:url("../../images/pass-bg_1-mob.webp")}
