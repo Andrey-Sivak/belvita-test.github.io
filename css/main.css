@@ -5435,7 +5435,16 @@ b {
   }
 
   .stock__slider__btn {
-    display: none !important;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .stock__slider__btn--prev {
+    left: 0;
+  }
+
+  .stock__slider__btn--next {
+    right: 0;
   }
 }
 @supports (-webkit-appearance:none){
